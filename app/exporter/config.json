@@ -1,0 +1,57 @@
+{
+  "test_mode": true,
+
+  "clusters": [
+    {
+      "name": "cluster-01",
+      "path": "/mnt/cluster-01",
+      "datasets": [
+        { "name": "backups", "enabled": false },
+        { "name": "docker-misc", "enabled": false },
+        { "name": "docker-services", "enabled": false },
+        { "name": "ftp", "enabled": false },
+        { "name": "gay-photovault", "enabled": false },
+        { "name": "gaystuff", "enabled": true },
+        { "name": "gaystuff-inbox", "enabled": true },
+        { "name": "gaystuff-misc", "enabled": true },
+        { "name": "gaystuff-video", "enabled": true },
+        { "name": "household", "enabled": true },
+        { "name": "music", "enabled": false },
+        { "name": "noforn", "enabled": false },
+        { "name": "photovault", "enabled": false },
+        { "name": "system", "enabled": false },
+        { "name": "userhomes", "enabled": false },
+        { "name": "users", "enabled": false },
+        { "name": "video-inbox", "enabled": true },
+        { "name": "video-noforn", "enabled": false },
+        { "name": "video-web", "enabled": true },
+        { "name": "video-youtube", "enabled": true },
+        { "name": "vm-images", "enabled": false }
+      ]
+    },
+    {
+      "name": "cluster-02",
+      "path": "/mnt/cluster-02",
+      "datasets": [
+        { "name": ".actors", "enabled": false },
+        { "name": "gstf-ng-video", "enabled": true },
+        { "name": "gstf-ng-video2", "enabled": true },
+        { "name": "gstf-ng-video3", "enabled": true },
+        { "name": "nextcloud", "enabled": false },
+        { "name": "paperless", "enabled": false },
+        { "name": "pxe", "enabled": false }
+      ]
+    }
+  ],
+
+  "options": {
+    "file_extensions": [ ".mp4", ".avi", ".mov", ".mkv" ],
+    "max_depth": 4,
+    "snapshot_schedule": "daily"
+  },
+
+  "endpoint_url": {
+    "url": "http://10.121.124.210:5000",
+    "timeout": 30
+  }
+}
